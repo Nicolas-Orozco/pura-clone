@@ -3,8 +3,10 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export default function Header() {
+  const breakMedium = useMediaQuery("(max-width:991px)");
   return (
     <AppBar
       color="transparent"
@@ -14,7 +16,7 @@ export default function Header() {
     >
       <Toolbar
         sx={{
-          display: "flex",
+          d: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           my: 2,
@@ -38,7 +40,7 @@ export default function Header() {
         >
           pura
         </Typography>
-        <MenuIcon sx={{ fontSize: 35 }} />
+        {breakMedium ? <MenuIcon sx={{ fontSize: 35 }} /> : <p>Links</p>}
       </Toolbar>
     </AppBar>
   );

@@ -1,23 +1,36 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import Container from "@mui/material/Container";
+
 import Header from "./components/Header";
 import "./App.css";
 
-const themeDefault = createTheme({
-  pallete: {
+const puraTheme = createTheme({
+  palette: {
     mode: "light",
+    primary: {
+      main: "#fd3fb3",
+    },
+    secondary: {
+      main: "#fd3e4f",
+    },
+    info: {
+      main: "#000000",
+    },
   },
 });
 function App() {
   return (
-    <ThemeProvider theme={themeDefault}>
-      <Container maxWidth={false} disableGutters>
-        <CssBaseline />
-        <Header />
-        <h1>Dummy</h1>
-      </Container>
+    <ThemeProvider theme={puraTheme}>
+      <CssBaseline />
+      <Header />
+      <h1>Dummy</h1>
+      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
+      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
+      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
+      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
+      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
+      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>
     </ThemeProvider>
   );
 }

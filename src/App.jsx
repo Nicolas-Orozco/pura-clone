@@ -1,7 +1,7 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-
 import Header from "./components/Header";
 import "./App.css";
 
@@ -24,13 +24,16 @@ function App() {
     <ThemeProvider theme={puraTheme}>
       <CssBaseline />
       <Header />
-      <h1>Dummy</h1>
-      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
-      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
-      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
-      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
-      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>{" "}
-      <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1> <h1>Dummy</h1>
+      {/* <Box
+        sx={{
+          height: "100vh",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "auto, cover",
+          backgroundPosition: "0px 0px, 50% 50%",
+          backgroundImage:
+            "url(https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/5942089c45541375fd9eabaa_head-bg.png)",
+        }}
+      /> */}
     </ThemeProvider>
   );
 }

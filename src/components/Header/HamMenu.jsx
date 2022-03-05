@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { itemsPages } from "../../data/Items";
 
 function HamMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -13,7 +14,6 @@ function HamMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const menuItems = ["Home", "About", "Team", "Services", "Contact"];
   return (
     <>
       <Button
@@ -41,15 +41,16 @@ function HamMenu() {
           },
         }}
       >
-        {menuItems.map((item) => (
+        {itemsPages.map(({ title, id, link }) => (
           <MenuItem
             onClick={handleClose}
-            key="item"
+            component="a"
+            href={link}
+            key={id}
             sx={{
               lineHeight: "2.7",
               backgroundColor: "info.main",
-              color: ({ palette }) =>
-                palette.getContrastText(palette.info.main),
+              color: "background.default",
               transition: "color 300ms ease",
               "&:hover": {
                 backgroundColor: "info.main",
@@ -57,7 +58,7 @@ function HamMenu() {
               },
             }}
           >
-            {item}
+            {title}
           </MenuItem>
         ))}
       </Menu>

@@ -3,14 +3,15 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import HamMenu from "./HamMenu";
+import HamMenu from "./Header/HamMenu";
+import MainMenu from "./Header/MainMenu";
 
 export default function Header() {
   const breakMedium = useMediaQuery("(max-width:991px)");
   return (
     <AppBar
       color="transparent"
-      position="static"
+      position="absolute"
       sx={{ boxShadow: "none" }}
       id="home"
     >
@@ -43,7 +44,7 @@ export default function Header() {
         >
           pura
         </Typography>
-        {breakMedium ? <HamMenu /> : <p>Links</p>}
+        {breakMedium ? <HamMenu /> : <MainMenu />}
       </Toolbar>
     </AppBar>
   );

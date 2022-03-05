@@ -1,6 +1,5 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import Box from "@mui/material/Box";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Header from "./components/Header";
 import "./App.css";

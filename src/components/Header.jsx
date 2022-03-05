@@ -2,19 +2,22 @@ import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import MenuIcon from "@mui/icons-material/Menu";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import HamMenu from "./Header/HamMenu";
+import MainMenu from "./Header/MainMenu";
 
 export default function Header() {
+  const breakMedium = useMediaQuery("(max-width:991px)");
   return (
     <AppBar
       color="transparent"
-      position="static"
+      position="absolute"
       sx={{ boxShadow: "none" }}
       id="home"
     >
       <Toolbar
         sx={{
-          display: "flex",
+          d: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           my: 2,
@@ -22,11 +25,14 @@ export default function Header() {
         }}
       >
         <Typography
-          variant="h4"
+          variant="h3"
           component="a"
           href="#home"
           sx={{
-            color: "inherit",
+            background:
+              "linear-gradient(45deg, #fd3fb3, #fd3f81 31%, #fd3e4f 78%, #fd3e4f);",
+            backgroundClip: "text",
+            WebkitTextFillColor: "transparent",
             textDecoration: "none",
             fontWeight: "bold",
             userSelect: "none",
@@ -38,7 +44,7 @@ export default function Header() {
         >
           pura
         </Typography>
-        <MenuIcon sx={{ fontSize: 35 }} />
+        {breakMedium ? <HamMenu /> : <MainMenu />}
       </Toolbar>
     </AppBar>
   );

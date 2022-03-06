@@ -1,22 +1,18 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-import { styled } from "@mui/system";
+import useCustom from "../../hooks/useCustom";
 import { itemsPages, itemsIcons } from "../../data/Items";
 
-const Link = styled(Typography)(({ theme }) => ({
-  textDecoration: "none",
-  color: theme.palette.primary.main,
-}));
 function MainMenu() {
+  const { Link } = useCustom();
   return (
     <>
       <Stack
         direction="row"
         justifyContent="space-around"
-        alignItems="center"
-        spacing={3}
+        spacing={4}
         component="nav"
+        role="navigation"
       >
         {itemsPages.map(({ title, id, link }) => (
           <Link variant="subtitle1" component="a" href={link} key={id}>
@@ -27,9 +23,8 @@ function MainMenu() {
       <Stack
         direction="row"
         justifyContent="space-around"
-        alignItems="center"
-        spacing={3}
-        component="nav"
+        spacing={4}
+        component="div"
       >
         {itemsIcons.map(({ icon, id, link }) => (
           <Link variant="subtitle1" component="a" href={link} key={id}>

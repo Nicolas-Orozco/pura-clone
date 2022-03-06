@@ -2,10 +2,11 @@ import React from "react";
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import useCustom from "../../hooks/useCustom";
 import { itemsPages } from "../../data/Items";
 
 function HamMenu() {
+  const { Item } = useCustom();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -19,7 +20,8 @@ function HamMenu() {
       <Button
         variant="text"
         color="inherit"
-        aria-controls={open ? "basic-menu" : undefined}
+        id="menu-button"
+        aria-controls={open ? "navigation-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
@@ -28,12 +30,12 @@ function HamMenu() {
         <MenuIcon sx={{ fontSize: 35 }} />
       </Button>
       <Menu
-        id="basic-menu"
+        id="navigation-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
         MenuListProps={{
-          "aria-labelledby": "basic-button",
+          "aria-labelledby": "menu-button",
         }}
         PaperProps={{
           style: {
@@ -42,24 +44,9 @@ function HamMenu() {
         }}
       >
         {itemsPages.map(({ title, id, link }) => (
-          <MenuItem
-            onClick={handleClose}
-            component="a"
-            href={link}
-            key={id}
-            sx={{
-              lineHeight: "2.7",
-              backgroundColor: "info.main",
-              color: "background.default",
-              transition: "color 300ms ease",
-              "&:hover": {
-                backgroundColor: "info.main",
-                color: "secondary.main",
-              },
-            }}
-          >
+          <Item onClick={handleClose} component="a" href={link} key={id}>
             {title}
-          </MenuItem>
+          </Item>
         ))}
       </Menu>
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 const puraTheme = createTheme({
@@ -23,6 +24,7 @@ function App() {
     <ThemeProvider theme={puraTheme}>
       <CssBaseline />
       <Header />
+      <Footer />
       {/* <Box
         sx={{
           height: "100vh",

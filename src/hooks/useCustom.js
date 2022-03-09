@@ -1,6 +1,7 @@
 import { styled } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
+import Box from "@mui/material/Box";
 
 export default function useCustom() {
   const Logo = styled(Typography)({
@@ -18,7 +19,7 @@ export default function useCustom() {
     color: palette.primary.main,
   }));
   const Item = styled(MenuItem)(({ theme: { palette } }) => ({
-    lineHeight: "2.9",
+    lineHeight: 2.9,
     backgroundColor: palette.info.main,
     color: palette.background.default,
     transition: "color 300ms ease",
@@ -27,5 +28,17 @@ export default function useCustom() {
       color: palette.secondary.main,
     },
   }));
-  return { Link, Logo, Item };
+  const Copyright = styled(Typography)(({ theme: { palette } }) => ({
+    fontWeight: 900,
+    color: palette.secondary.main,
+    textAlign: "center",
+  }));
+  const Wrapper = styled(Box)({
+    marginRight: "auto",
+    marginLeft: "auto",
+    display: "flex",
+    flexWrap: "wrap",
+    gap: 40,
+  });
+  return { Link, Logo, Item, Copyright, Wrapper };
 }

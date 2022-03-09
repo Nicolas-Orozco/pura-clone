@@ -1,13 +1,13 @@
 import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import useBreakpoints from "../hooks/useBreakpoints";
 import useCustom from "../hooks/useCustom";
 import HamMenu from "./Header/HamMenu";
 import MainMenu from "./Header/MainMenu";
 
 export default function Header() {
-  const isMedium = useMediaQuery("(max-width:991px)");
+  const { maxExtraSmall, maxMedium } = useBreakpoints();
   const { Logo } = useCustom();
   return (
     <AppBar
@@ -22,13 +22,13 @@ export default function Header() {
           justifyContent: "space-between",
           alignItems: "center",
           my: 2,
-          mx: 9,
+          mx: maxExtraSmall ? 1 : 6,
         }}
       >
         <Logo variant="h3" component="a" href="#home">
           pura
         </Logo>
-        {isMedium ? <HamMenu /> : <MainMenu />}
+        {maxMedium ? <HamMenu /> : <MainMenu />}
       </Toolbar>
     </AppBar>
   );

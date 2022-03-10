@@ -38,7 +38,7 @@ export default function useCustom() {
     marginLeft: "auto",
     display: "flex",
     flexWrap: "wrap",
-    gap: 40,
+    gap: 35,
   });
   return { Link, Logo, Item, Copyright, Wrapper };
 }

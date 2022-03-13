@@ -5,13 +5,7 @@ import Box from "@mui/material/Box";
 
 function Intro() {
   return (
-    <Stack
-      direction="column"
-      spacing={7}
-      justifyContent="center"
-      alignItems="center"
-      flex={1}
-    >
+    <Stack direction="column" spacing={7} flex="1 1 0">
       <Typography variant="h4" component="h3" fontWeight="bold">
         Suite of features that make Pura one of the best agency on{" "}
         <Box component="span" color="secondary.main">

@@ -53,24 +53,28 @@ const itemsIcons = [
 ];
 const itemsServices = [
   {
-    icon: <LightbulbOutlinedIcon />,
+    icon: <LightbulbOutlinedIcon fontSize="large" />,
     title: "Unique layouts",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .",
+    id: "1",
   },
   {
-    icon: <BoltOutlinedIcon />,
+    icon: <BoltOutlinedIcon fontSize="large" />,
     title: "New features",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .",
+    id: "2",
   },
   {
-    icon: <TvOutlinedIcon />,
+    icon: <TvOutlinedIcon fontSize="large" />,
     title: "Responsive design",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .",
+    id: "3",
   },
   {
-    icon: <AllInclusiveOutlinedIcon />,
+    icon: <AllInclusiveOutlinedIcon fontSize="large" />,
     title: "And more & more ...",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type .",
+    id: "4",
   },
 ];
 export { itemsPages, itemsIcons, itemsServices };

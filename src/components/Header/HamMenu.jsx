@@ -2,10 +2,13 @@ import React from "react";
 import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
+import Slide from "@mui/material/Slide";
 import useCustom from "../../hooks/useCustom";
+import useBreakpoints from "../../hooks/useBreakpoints";
 import { itemsPages } from "../../data/Items";
 
 function HamMenu() {
+  const { maxExtraSmall } = useBreakpoints();
   const { Item } = useCustom();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -42,9 +45,16 @@ function HamMenu() {
             width: "100%",
           },
         }}
+        TransitionComponent={Slide}
       >
         {itemsPages.map(({ title, id, link }) => (
-          <Item onClick={handleClose} component="a" href={link} key={id}>
+          <Item
+            onClick={handleClose}
+            component="a"
+            href={link}
+            key={id}
+            sx={{ pl: maxExtraSmall ? 2 : 8 }}
+          >
             {title}
           </Item>
         ))}

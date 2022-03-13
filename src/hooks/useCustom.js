@@ -19,13 +19,13 @@ export default function useCustom() {
     color: palette.primary.main,
   }));
   const Item = styled(MenuItem)(({ theme: { palette } }) => ({
-    lineHeight: 2.9,
+    lineHeight: 2.8,
     backgroundColor: palette.info.main,
     color: palette.background.default,
     transition: "color 300ms ease",
     "&:hover": {
       backgroundColor: palette.info.main,
-      color: palette.secondary.main,
+      color: palette.primary.main,
     },
   }));
   const Copyright = styled(Typography)(({ theme: { palette } }) => ({

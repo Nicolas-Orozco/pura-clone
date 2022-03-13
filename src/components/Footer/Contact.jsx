@@ -18,7 +18,15 @@ function Contact() {
         my={2}
       >
         <MailOutlineIcon sx={{ marginRight: -1.5 }} />
-        <Typography color="info.main" letterSpacing={0.5} component="span">
+        <Typography
+          component="a"
+          href="#"
+          sx={{
+            textDecoration: "none",
+            letterSpacing: 0.3,
+            color: "info.main",
+          }}
+        >
           support@themeptation.com
         </Typography>
       </Stack>
@@ -30,7 +38,15 @@ function Contact() {
         my={2}
       >
         <LocalPhoneOutlinedIcon sx={{ marginRight: -1.5 }} />
-        <Typography color="info.main" letterSpacing={0.5} component="span">
+        <Typography
+          sx={{
+            textDecoration: "none",
+            letterSpacing: 0.3,
+            color: "info.main",
+          }}
+          component="a"
+          href="#"
+        >
           +001-123-456-7890
         </Typography>
       </Stack>

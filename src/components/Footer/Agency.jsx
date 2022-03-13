@@ -18,19 +18,19 @@ function Agency() {
         sx={{
           userSelect: "none",
           textDecoration: "none",
-          "& > *": {
-            mb: 4.1,
-          },
+          mb: 5,
         }}
       >
-        <Logo variant="h2">pura</Logo>
+        <Logo variant="h2" component="h3">
+          pura
+        </Logo>
         <Typography variant="subtitle1" color="info.main">
           Agency .
         </Typography>
       </Stack>
       <Typography
         variant="subtitle2"
-        sx={{ fontWeight: 400, lineHeight: 2, pr: 8 }}
+        sx={{ fontWeight: 400, lineHeight: 2, pr: 11 }}
       >
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum hasbeen the industry&#39;s standard dummy text

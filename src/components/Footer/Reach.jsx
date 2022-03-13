@@ -5,19 +5,11 @@ import Contact from "./Contact";
 
 function Reach() {
   return (
-    <Box
-      sx={{
-        flex: "1",
-        "& > *": {
-          my: 2.5,
-        },
-        mb: 2.5,
-      }}
-    >
+    <Box flex={1} mt={1} mb={8}>
       <Typography variant="h5" component="h3" fontWeight="bold" pb={3}>
         Reach us
       </Typography>
-      <Typography variant="subtitle2">
+      <Typography variant="subtitle2" pr={4} fontWeight={500}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry.
       </Typography>

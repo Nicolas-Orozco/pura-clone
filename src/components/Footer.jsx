@@ -11,6 +11,7 @@ function Footer() {
   return (
     <Wrapper
       sx={{
+        my: 8,
         px: maxExtraSmall ? 2 : 9,
         maxWidth: 2200,
         flexDirection: maxSmall ? "column" : "row",
@@ -20,7 +21,7 @@ function Footer() {
       <Agency />
       <Reach />
       <Box width="100%">
-        <Copyright mb={3}>
+        <Copyright>
           © 2017 Design by themeptation // Developed in
           <br /> webflow by.. <br />
           Clone by Nicolas Orozco

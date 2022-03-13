@@ -2,6 +2,7 @@ import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Header from "./components/Header";
+import Services from "./components/Services";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -24,6 +25,14 @@ function App() {
     <ThemeProvider theme={puraTheme}>
       <CssBaseline />
       <Header />
+      <h2>Dummy</h2>
+      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
+      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
+      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
+      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
+      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
+      <h2>Dummy</h2> <h2>Dummy</h2>
+      <Services />
       <Footer />
       {/* <Box
         sx={{
@@ -35,13 +44,6 @@ function App() {
             "url(https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/5942089c45541375fd9eabaa_head-bg.png)",
         }}
       /> */}
-      <h2>Dummy</h2>
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2>
     </ThemeProvider>
   );
 }

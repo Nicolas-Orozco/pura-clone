@@ -43,6 +43,7 @@ function HamMenu() {
         PaperProps={{
           style: {
             width: "100%",
+            marginTop: 13,
           },
         }}
         TransitionComponent={Slide}

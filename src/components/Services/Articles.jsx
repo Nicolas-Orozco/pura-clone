@@ -5,23 +5,24 @@ import useBreakpoints from "../../hooks/useBreakpoints";
 import { itemsServices } from "../../data/Items";
 
 function Articles() {
-  const { maxSmall } = useBreakpoints();
+  const { maxExtraSmall } = useBreakpoints();
   return itemsServices.map(({ icon, title, text, id }) => {
     return (
       <Stack
         component="article"
-        flex={maxSmall ? "1 1 100%" : "1 1 50%"}
+        flex={maxExtraSmall ? "1 1 auto" : "1 1 45%"}
         key={id}
         spacing={1}
-        p={1.5}
+        mr={1}
+        my={2}
       >
-        <Typography variant="h6" color="secondary.main">
+        <Typography variant="subtitle2" color="secondary.main">
           {icon}
         </Typography>
-        <Typography variant="h5" fontWeight="bold">
+        <Typography variant="h6" component="h5" fontWeight="bold">
           {title}
         </Typography>
-        <Typography variant="subtitle2" fontWeight={400}>
+        <Typography variant="subtitle2" component="p" fontWeight={400}>
           {text}
         </Typography>
       </Stack>

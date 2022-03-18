@@ -13,10 +13,19 @@ function Services() {
       sx={{
         width: "auto",
         backgroundColor: "#1d1d1d",
-        px: maxExtraSmall ? 2 : 8,
+        px: () => {
+          if (maxMedium) {
+            return 10;
+          }
+          if (maxExtraSmall) {
+            return 2;
+          }
+          return 16;
+        },
         py: 9,
         flexDirection: maxMedium ? "column" : "row",
         alignItems: "center",
+        gap: 4.5,
         color: ({ palette }) => palette.getContrastText(palette.info.main),
       }}
       component="section"

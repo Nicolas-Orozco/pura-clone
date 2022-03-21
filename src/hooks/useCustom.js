@@ -1,12 +1,19 @@
 import { styled } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
+import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
 export default function useCustom() {
+  const Gradient =
+    "linear-gradient(45deg, #fd3fb3, #fd3f81 31%, #fd3e4f 78%, #fd3e4f)";
+  const Btn = styled(Button)({
+    textTransform: "Capitalize",
+    backgroundImage: Gradient,
+    borderRadius: 0,
+  });
   const Logo = styled(Typography)({
-    background:
-      "linear-gradient(45deg, #fd3fb3, #fd3f81 31%, #fd3e4f 78%, #fd3e4f);",
+    background: Gradient,
     backgroundClip: "text",
     WebkitTextFillColor: "transparent",
     textDecoration: "none",
@@ -40,5 +47,5 @@ export default function useCustom() {
     flexWrap: "wrap",
     gap: 35,
   });
-  return { Link, Logo, Item, Copyright, Wrapper };
+  return { Link, Logo, Item, Copyright, Wrapper, Btn };
 }

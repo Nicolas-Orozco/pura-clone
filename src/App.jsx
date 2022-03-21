@@ -2,6 +2,8 @@ import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Header from "./components/Header";
+import Team from "./components/Team";
+import Features from "./components/Features";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -32,6 +34,8 @@ function App() {
       <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
       <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
       <h2>Dummy</h2> <h2>Dummy</h2>
+      <Team />
+      <Features />
       <Services />
       <Footer />
       {/* <Box

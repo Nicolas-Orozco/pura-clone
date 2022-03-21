@@ -11,7 +11,7 @@ const itemsPages = [
   {
     title: "Home",
     id: "1",
-    link: "#",
+    link: "#home",
   },
   {
     title: "About",
@@ -31,7 +31,7 @@ const itemsPages = [
   {
     title: "Contact",
     id: "5",
-    link: "#",
+    link: "#contact",
   },
 ];
 const itemsIcons = [

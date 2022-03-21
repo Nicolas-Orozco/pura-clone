@@ -14,12 +14,8 @@ function Services() {
         width: "auto",
         backgroundColor: "#1d1d1d",
         px: () => {
-          if (maxMedium) {
-            return 10;
-          }
-          if (maxExtraSmall) {
-            return 2;
-          }
+          if (maxExtraSmall) return 2;
+          if (maxMedium) return 10;
           return 16;
         },
         py: 9,

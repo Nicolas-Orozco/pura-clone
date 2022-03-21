@@ -10,10 +10,10 @@ function Articles() {
     return (
       <Stack
         component="article"
-        flex={maxExtraSmall ? "1 1 auto" : "1 1 45%"}
+        flex={maxExtraSmall ? "1 1 auto" : "1 1 40%"}
         key={id}
         spacing={1}
-        mr={1}
+        mr={2}
         my={2}
       >
         <Typography variant="subtitle2" color="secondary.main">

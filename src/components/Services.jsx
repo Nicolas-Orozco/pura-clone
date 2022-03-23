@@ -18,7 +18,7 @@ function Services() {
           if (maxMedium) return 10;
           return 16;
         },
-        py: 9,
+        py: 10,
         flexDirection: maxMedium ? "column" : "row",
         alignItems: "center",
         gap: 4.5,

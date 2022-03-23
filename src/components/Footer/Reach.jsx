@@ -5,7 +5,7 @@ import Contact from "./Contact";
 
 function Reach() {
   return (
-    <Box flex={1} mt={1} mb={8}>
+    <Box flex={1} mt={3} mb={8}>
       <Typography variant="h5" component="h3" fontWeight="bold" pb={3}>
         Reach us
       </Typography>

@@ -14,6 +14,7 @@ function Content() {
       justifyContent="center"
       alignItems="flex-start"
       spacing={8}
+      ml={-5.5}
       flex="1"
       p={maxExtraSmall ? 2 : 10}
     >

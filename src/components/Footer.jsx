@@ -11,8 +11,8 @@ function Footer() {
   return (
     <Wrapper
       sx={{
-        mt: 5.5,
-        mb: 5,
+        pt: 3,
+        pb: 4,
         px: maxExtraSmall ? 2 : 10,
         maxWidth: 2200,
         flexDirection: maxSmall ? "column" : "row",
@@ -20,7 +20,7 @@ function Footer() {
           ? ""
           : "url(https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/59444f6363af5c680814e567_bg.png)",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "auto 130%",
+        backgroundSize: "auto 100%",
         backgroundPosition: "100% 50%",
       }}
       component="footer"

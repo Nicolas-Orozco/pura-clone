@@ -10,7 +10,7 @@ function Features() {
   return (
     <Wrapper
       sx={{
-        maxWidth: 2450,
+        width: "auto",
         flexDirection: "row",
         justifyContent: "center",
         flexWrap: "no-wrap",

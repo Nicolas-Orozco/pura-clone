@@ -77,4 +77,21 @@ const itemsServices = [
     id: "4",
   },
 ];
-export { itemsPages, itemsIcons, itemsServices };
+const itemsTeam = [
+  {
+    name: "Mark John",
+    icon: "https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/5942bd72cabb8d04b11a7ad5_layer-4.png",
+    role: "Developer",
+  },
+  {
+    name: "Sarah Levo",
+    icon: "https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/5942bd7239c97850d0731ab4_layer-5.png",
+    role: "Designer",
+  },
+  {
+    name: "Xavi Miko",
+    icon: "https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/5942bd72fe536204a1cc7dd6_layer-6.png",
+    role: "CEO",
+  },
+];
+export { itemsPages, itemsIcons, itemsServices, itemsTeam };

@@ -7,7 +7,7 @@ import useCustom from "../../hooks/useCustom";
 function Agency() {
   const { Logo } = useCustom();
   return (
-    <Box flex="1">
+    <Box flex="1" mt={4}>
       <Stack
         direction="row"
         justifyContent="flex-start"

@@ -2,11 +2,17 @@ import React from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import useBreakpoints from "../../hooks/useBreakpoints";
 
 function Intro() {
+  const { maxMedium } = useBreakpoints();
   return (
-    <Stack direction="column" spacing={7} flex="1 1 0">
-      <Typography variant="h4" component="h3" fontWeight="bold">
+    <Stack direction="column" spacing={7} flex={1}>
+      <Typography
+        variant={maxMedium ? "h4" : "h3"}
+        component="h3"
+        fontWeight="bold"
+      >
         Suite of features that make Pura one of the best agency on{" "}
         <Box component="span" color="secondary.main">
           2017.

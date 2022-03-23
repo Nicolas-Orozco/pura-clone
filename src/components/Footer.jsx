@@ -11,19 +11,26 @@ function Footer() {
   return (
     <Wrapper
       sx={{
-        my: 8,
-        px: maxExtraSmall ? 2 : 9,
+        pt: 3,
+        pb: 4,
+        px: maxExtraSmall ? 2 : 10,
         maxWidth: 2200,
         flexDirection: maxSmall ? "column" : "row",
+        backgroundImage: maxSmall
+          ? ""
+          : "url(https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/59444f6363af5c680814e567_bg.png)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "auto 100%",
+        backgroundPosition: "100% 50%",
       }}
       component="footer"
+      id="contact"
     >
       <Agency />
       <Reach />
       <Box width="100%">
         <Copyright>
-          © 2017 Design by themeptation // Developed in
-          <br /> webflow by.. <br />
+          © 2017 Design by themeptation // Developed in webflow by.. <br />
           Clone by Nicolas Orozco
         </Copyright>
       </Box>

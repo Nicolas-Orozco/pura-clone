@@ -16,7 +16,7 @@ function Content() {
       spacing={8}
       ml={-5.5}
       flex="1"
-      p={maxExtraSmall ? 2 : 10}
+      p={maxExtraSmall ? 7 : 10}
     >
       <Typography
         variant={maxMedium ? "h4" : "h3"}

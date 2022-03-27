@@ -1,6 +1,6 @@
 import React from "react";
-import Content from "./Features/Content";
-import Example from "./Features/Example";
+import Content from "../components/Features/Content";
+import Example from "../components/Features/Example";
 import useCustom from "../hooks/useCustom";
 import useBreakpoints from "../hooks/useBreakpoints";
 

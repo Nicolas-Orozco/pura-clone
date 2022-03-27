@@ -2,8 +2,8 @@ import React from "react";
 import Stack from "@mui/material/Stack";
 import useCustom from "../hooks/useCustom";
 import useBreakpoints from "../hooks/useBreakpoints";
-import Intro from "./Services/Intro";
-import Articles from "./Services/Articles";
+import Intro from "../components/Services/Intro";
+import Sections from "../components/Services/Sections";
 
 function Services() {
   const { maxMedium, maxExtraSmall } = useBreakpoints();
@@ -35,7 +35,7 @@ function Services() {
         alignItems="stretch"
         flexWrap="wrap"
       >
-        <Articles />
+        <Sections />
       </Stack>
     </Wrapper>
   );

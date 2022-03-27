@@ -3,8 +3,8 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import useBreakpoints from "../hooks/useBreakpoints";
 import useCustom from "../hooks/useCustom";
-import HamMenu from "./Header/HamMenu";
-import MainMenu from "./Header/MainMenu";
+import HamMenu from "../components/Header/HamMenu";
+import MainMenu from "../components/Header/MainMenu";
 
 export default function Header() {
   const { maxExtraSmall, maxMedium } = useBreakpoints();

@@ -1,11 +1,11 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import Header from "./components/Header";
-import Team from "./components/Team";
-import Features from "./components/Features";
-import Services from "./components/Services";
-import Footer from "./components/Footer";
+import Header from "./pages/Header";
+import Team from "./pages/Team";
+import Features from "./pages/Features";
+import Services from "./pages/Services";
+import Footer from "./pages/Footer";
 import "./App.css";
 
 const puraTheme = createTheme({
@@ -27,13 +27,6 @@ function App() {
     <ThemeProvider theme={puraTheme}>
       <CssBaseline />
       <Header />
-      <h2>Dummy</h2>
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2> <h2>Dummy</h2>{" "}
-      <h2>Dummy</h2> <h2>Dummy</h2>
       <Team />
       <Features />
       <Services />

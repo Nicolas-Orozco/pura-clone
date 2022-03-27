@@ -4,12 +4,11 @@ import Typography from "@mui/material/Typography";
 import useBreakpoints from "../../hooks/useBreakpoints";
 import { itemsServices } from "../../data/Items";
 
-function Articles() {
+function Sections() {
   const { maxExtraSmall } = useBreakpoints();
   return itemsServices.map(({ icon, title, text, id }) => {
     return (
       <Stack
-        component="article"
         flex={maxExtraSmall ? "1 1 auto" : "1 1 40%"}
         key={id}
         spacing={1}
@@ -30,4 +29,4 @@ function Articles() {
   });
 }
 
-export default Articles;
+export default Sections;

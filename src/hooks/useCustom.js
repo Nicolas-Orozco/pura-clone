@@ -36,7 +36,7 @@ export default function useCustom() {
     },
   }));
   const Copyright = styled(Typography)(({ theme: { palette } }) => ({
-    fontWeight: 900,
+    fontWeight: "bolder",
     color: palette.secondary.main,
     textAlign: "center",
   }));

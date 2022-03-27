@@ -2,8 +2,8 @@ import React from "react";
 import Box from "@mui/material/Box";
 import useCustom from "../hooks/useCustom";
 import useBreakpoints from "../hooks/useBreakpoints";
-import Agency from "./Footer/Agency";
-import Reach from "./Footer/Reach";
+import Agency from "../components/Footer/Agency";
+import Reach from "../components/Footer/Reach";
 
 function Footer() {
   const { maxSmall, maxExtraSmall } = useBreakpoints();
@@ -16,9 +16,9 @@ function Footer() {
         px: maxExtraSmall ? 2 : 10,
         maxWidth: 2200,
         flexDirection: maxSmall ? "column" : "row",
-        backgroundImage: maxSmall
-          ? ""
-          : "url(https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/59444f6363af5c680814e567_bg.png)",
+        backgroundImage:
+          !maxSmall &&
+          "url(https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/59444f6363af5c680814e567_bg.png)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "auto 100%",
         backgroundPosition: "100% 50%",

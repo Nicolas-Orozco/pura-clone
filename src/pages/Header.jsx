@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <AppBar
       color="transparent"
-      position="static"
+      position="absolute"
       sx={{ boxShadow: "none" }}
       id="home"
     >

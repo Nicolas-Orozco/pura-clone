@@ -34,12 +34,7 @@ function Content() {
         consectetur lorem eu tellus semper ornare. Nullam purus leo, imperdiet
         eget tempus a, mattis vitae eros.
       </Typography>
-      <Btn
-        variant="contained"
-        size="large"
-        disableElevation
-        sx={{ px: 5, py: 1.5 }}
-      >
+      <Btn variant="contained" size="large" disableElevation>
         Text Button
       </Btn>
     </Stack>

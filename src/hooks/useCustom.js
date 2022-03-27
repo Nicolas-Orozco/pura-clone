@@ -10,6 +10,7 @@ export default function useCustom() {
   const Btn = styled(Button)({
     textTransform: "Capitalize",
     backgroundImage: Gradient,
+    padding: "10px 40px 10px 40px",
     borderRadius: 0,
   });
   const Logo = styled(Typography)({

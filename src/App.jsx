@@ -1,6 +1,7 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Home from "./pages/Home";
 import Header from "./pages/Header";
 import Team from "./pages/Team";
 import Features from "./pages/Features";
@@ -27,20 +28,11 @@ function App() {
     <ThemeProvider theme={puraTheme}>
       <CssBaseline />
       <Header />
+      <Home />
       <Team />
       <Features />
       <Services />
       <Footer />
-      {/* <Box
-        sx={{
-          height: "100vh",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "auto, cover",
-          backgroundPosition: "0px 0px, 50% 50%",
-          backgroundImage:
-            "url(https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/5942089c45541375fd9eabaa_head-bg.png)",
-        }}
-      /> */}
     </ThemeProvider>
   );
 }

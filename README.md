@@ -1,4 +1,4 @@
-## ![pura logo](https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/594442fdbec15a6c5ec80fa9_pura.png)Clone ![50%](https://progress-bar.dev/45)
+## ![pura logo](https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/594442fdbec15a6c5ec80fa9_pura.png)Clone ![50%](https://progress-bar.dev/50)
 
 [Logo source](https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/594442fdbec15a6c5ec80fa9_pura.png)
 

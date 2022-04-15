@@ -2,7 +2,7 @@
 
 [Logo source](https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/594442fdbec15a6c5ec80fa9_pura.png)
 
-**Clon del sitio web Pura usando React y Material UI**
+**Clon del [sitio web Pura](http://puraland.webflow.io/) usando React y Material UI**
 
 _Incluso, puedes escoger otros idiomas! : [English](README.md), [Español](README.es.md)_
 
@@ -21,7 +21,8 @@ Reforzas mis hablidades de diseño al clonar una landing page más profesional
 
 ## Link:
 
-[:arrow_right: Aqui tienes!](https://pura-clone.vercel.app/)
+[:arrow_right: Aquí tienes!](https://pura-clone.vercel.app/)
+[:fast_forward: Aquí el Pura original!](http://puraland.webflow.io/)
 
 ## Copyright:
 

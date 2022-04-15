@@ -2,7 +2,7 @@
 
 [Logo source](https://uploads-ssl.webflow.com/5942027145541375fd9eaa52/594442fdbec15a6c5ec80fa9_pura.png)
 
-**React and Material UI clone of Pura website**
+**React and Material UI clone of [Pura website](http://puraland.webflow.io/).**
 
 _Also, you can choose other languages! : [English](README.md), [Español](README.es.md)_
 
@@ -23,6 +23,8 @@ page
 ## Link:
 
 [:arrow_right: Here you go!](https://pura-clone.vercel.app/)
+
+[:fast_forward: Original Pura here!](http://puraland.webflow.io/)
 
 ## Copyright:
 

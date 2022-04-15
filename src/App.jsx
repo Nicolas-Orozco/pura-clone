@@ -3,6 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Home from "./pages/Home";
 import Header from "./pages/Header";
+import About from "./pages/About";
 import Team from "./pages/Team";
 import Features from "./pages/Features";
 import Services from "./pages/Services";
@@ -29,6 +30,7 @@ function App() {
       <CssBaseline />
       <Header />
       <Home />
+      <About />
       <Team />
       <Features />
       <Services />

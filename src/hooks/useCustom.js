@@ -48,5 +48,5 @@ export default function useCustom() {
     flexWrap: "wrap",
     gap: 35,
   });
-  return { Link, Logo, Item, Copyright, Wrapper, Btn };
+  return { Link, Logo, Item, Copyright, Wrapper, Btn, Gradient };
 }

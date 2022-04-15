@@ -16,7 +16,7 @@ const itemsPages = [
   {
     title: "About",
     id: "2",
-    link: "#",
+    link: "#about",
   },
   {
     title: "Team",

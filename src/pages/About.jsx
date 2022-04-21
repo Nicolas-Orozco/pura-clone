@@ -13,11 +13,7 @@ function About() {
       sx={{
         width: "auto",
         backgroundImage: Gradient,
-        px: maxExtraSmall ? 2 : maxMedium ? 5 : 16 /* () => {
-          if (maxExtraSmall) return 2;
-          if (maxMedium) return 10;
-          return 16;
-        } */,
+        px: maxExtraSmall ? 2 : maxMedium ? 5 : 16,
         py: 10,
         flexDirection: "column",
         color: ({ palette }) => palette.getContrastText(palette.info.main),
@@ -53,8 +49,8 @@ function About() {
         sx={{
           backgroundImage: "none",
           color: ({ palette }) => palette.getContrastText(palette.info.main),
-          maxWidth: 450,
-          maxHeight: 60,
+          minWidth: maxMedium ? 90 : 180,
+          minHeight: maxMedium ? 50 : 60,
           borderRadius: 10,
           borderWidth: "medium",
           borderColor: ({ palette }) =>
